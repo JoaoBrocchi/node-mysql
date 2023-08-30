@@ -2,10 +2,10 @@ import mysql from "mysql"
 
 const pool = mysql.createPool({
     connectionLimit: 10,
-    host: "localhost",
-    user: "root",
-    password: "1234",
-    database: "nodemysql1"
+    host: "xxxxx",
+    user: "xxxx",
+    password: "xxxx",
+    database: "xxxx"
 })
 
 export default pool
