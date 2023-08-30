@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastra livros</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <%- include('header'); -%>
+    <h1>Cadastre o Seu livro</h1>
+    <form class="form" action="/books/insertBook" method="post">
+        <div class="form-control">
+            <label for="title ">Titulo:</label>
+            <input name="title" type="text" placeholder="Digite o titulo">
+        </div>
+        <div class="form-control">
+            <label for="title ">pages:</label>
+            <input name="pages" type="number" placeholder="Digite o numero de paginas">
+        </div>
+        <button type="submit" value="Cadastre">Cadastre</button>
+    </form>
+</body>
+</html>

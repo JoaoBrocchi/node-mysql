@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+</head>
+<body>
+    <%- include('header'); -%>
+    <h1>Livros disponiveis</h1>
+    <% books.forEach(function(book){ %>
+        <div>
+           <p> <%=book.id%> <span><a href="book/<%=book.id%>"><%=book.title%></a></span> - <%= book.Npages%> Paginas</p>
+        </div>
+    <% }); %>
+</body>
+</html>
